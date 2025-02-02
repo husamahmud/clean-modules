@@ -7,6 +7,7 @@ const currentDir = process.cwd()
 
 const child = spawn(binaryPath, [currentDir], {
   stdio: 'inherit',
+  cwd: currentDir,
 })
 
 child.on('error', (err) => {

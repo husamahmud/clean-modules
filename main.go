@@ -96,7 +96,17 @@ func deleteDirectory(dir Directory) error {
 }
 
 func main() {
-	root := "."
+	var root string
+	if len(os.Args) > 1 {
+		root = os.Args[1]
+	} else {
+		var err error
+		root, err = os.Getwd()
+		if err != nil {
+			fmt.Printf("Error getting current directory: %v\n", err)
+			return
+		}
+	}
 	fmt.Printf("Scanning for node_modules in %s (this may take a moment)...\n", root)
 
 	// Find all node_modules directories with their sizes
