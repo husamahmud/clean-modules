@@ -2,7 +2,7 @@
 const { exec } = require('child_process')
 const path = require('path')
 
-const binaryPath = path.join(__dirname, 'bin', 'clean-modules')
+const binaryPath = path.join(__dirname, 'bin', 'drop-modules')
 
 exec(binaryPath, (err, stdout, stderr) => {
   if (err) {

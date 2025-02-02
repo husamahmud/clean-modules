@@ -1,13 +1,13 @@
 {
-	"name": "clean-modules",
-	"version": "1.0.4",
+	"name": "drop-modules",
+	"version": "1.0.0",
 	"description": "A quick and simple tool to find and remove node_modules folders from your machine. Frees up space and keeps your workspace tidy!",
 	"bin": {
-		"clean-modules": "index.js"
+		"drop-modules": "index.js"
 	},
 	"main": "index.js",
 	"scripts": {
-		"postinstall": "go build -o bin/clean-modules main.go"
+		"postinstall": "go build -o bin/drop-modules main.go"
 	},
 	"keywords": [
 		"node_modules",
@@ -33,12 +33,12 @@
 	},
 	"license": "ISC",
 	"type": "commonjs",
-	"homepage": "https://github.com/husamahmud/clean-modules#readme",
+	"homepage": "https://github.com/husamahmud/drop-modules#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/husamahmud/clean-modules.git"
+		"url": "git+https://github.com/husamahmud/drop-modules.git"
 	},
 	"bugs": {
-		"url": "https://github.com/husamahmud/clean-modules/issues"
+		"url": "https://github.com/husamahmud/drop-modules/issues"
 	}
 }
