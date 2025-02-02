@@ -1,6 +1,6 @@
 {
 	"name": "drop-modules",
-	"version": "1.0.5",
+	"version": "1.0.9",
 	"description": "A quick and simple tool to find and remove node_modules folders from your machine. Frees up space and keeps your workspace tidy!",
 	"bin": {
 		"drop-modules": "index.js"
@@ -40,5 +40,8 @@
 	},
 	"bugs": {
 		"url": "https://github.com/husamahmud/drop-modules/issues"
+	},
+	"dependencies": {
+		"drop-modules": "^1.0.8"
 	}
 }

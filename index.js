@@ -11,10 +11,11 @@ const child = spawn(binaryPath, [currentDir], {
 })
 
 child.on('error', (err) => {
-  console.error('Failed to start subprocess.', err)
+  console.error('Failed to start subprocess:', err)
   process.exit(1)
 })
 
 child.on('close', (code) => {
+  console.log('Binary exited with code:', code)
   process.exit(code)
 })
