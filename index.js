@@ -4,10 +4,13 @@ const path = require('path')
 
 const binaryPath = path.join(__dirname, 'bin', 'drop-modules')
 
-exec(binaryPath, (err, stdout, stderr) => {
+console.log('Executing binary at:', binaryPath)
+
+exec(binaryPath, { stdio: 'inherit' }, (err, stdout, stderr) => {
   if (err) {
-    console.error(`Error: ${stderr}`)
+    console.error('Error executing binary:', err)
+    console.error(`stderr: ${stderr}`)
     process.exit(1)
   }
-  console.log(stdout)
+  if (stdout) console.log(stdout)
 })
