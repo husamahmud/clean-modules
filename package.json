@@ -1,0 +1,44 @@
+{
+	"name": "clean-modules",
+	"version": "1.0.2",
+	"description": "A quick and simple tool to find and remove node_modules folders from your machine. Frees up space and keeps your workspace tidy!",
+	"bin": {
+		"clean-modules": "index.js"
+	},
+	"main": "index.js",
+	"scripts": {
+		"postinstall": "go build -o bin/clean-modules main.go"
+	},
+	"keywords": [
+		"node_modules",
+		"cleaner",
+		"remove",
+		"clean",
+		"delete",
+		"disk-space",
+		"cli",
+		"tool",
+		"go",
+		"modules",
+		"node"
+	],
+	"author": {
+		"name": "Hüsam",
+		"email": "dev@husam.dev",
+		"username": "husamql3",
+		"twitter": "https://twitter.com/husamql3",
+		"linkedin": "https://www.linkedin.com/in/husamahmud/",
+		"website": "https://www.husam.ninja",
+		"github": "https://github.com/husamahmud"
+	},
+	"license": "ISC",
+	"type": "commonjs",
+	"homepage": "https://github.com/husamahmud/clean-modules#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/husamahmud/clean-modules.git"
+	},
+	"bugs": {
+		"url": "https://github.com/husamahmud/clean-modules/issues"
+	}
+}
