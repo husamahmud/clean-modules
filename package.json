@@ -36,7 +36,7 @@
 	"homepage": "https://github.com/husamahmud/clean-modules#readme",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/husamahmud/clean-modules.git"
+		"url": "git+https://github.com/husamahmud/clean-modules.git"
 	},
 	"bugs": {
 		"url": "https://github.com/husamahmud/clean-modules/issues"
